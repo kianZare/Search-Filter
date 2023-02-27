@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Variables */
+:root {
+    --primaryColor: #6d28d9;
+    --secondaryColor: #ede9fe;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGray: #7c7c7c;
+    --mainRed: #db2777;
+    --bodyColor: #f6f6f6;
+    --mainSpacing: 0.1rem;
+    --mainTransiyion: all 0.3s linear;
+}
+
+body{
+    color: var(--mainBlack);
+    background-color: var(--bodyColor);
+    font-family: "Lato", sans-serif;
+    position: relative;
+}
+
+.header{
+    height: 170px;
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#search{
+    border: none;
+    outline: none;
+    padding: 0.4rem 1rem;
+    width: 20rem;
+    border-radius: 8px;
+
+}
+#search:focus{
+    border: 2px solid var(--primaryColor);
+}
+
+
+
+.products{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.products-center{
+    width: 100%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 5rem;
+
+}
+
+.product {
+    background-color: var(--mainWhite);
+    padding-bottom: 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img{
+    width: 100%;
+    min-height: 120px;
+    border-radius: 12px 12px 0 0;
+}
+
+.product-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+.product-title{
+    font-size: 1.2rem;
+}
+.product-price{
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+    font-weight: bold;
+}
+
+
+.filter-box a{
+    text-decoration: none;
+}
+
+.btn{
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--primaryColor);
+    font-weight: bold;
+    color: var(--primaryColor);
+}
+.btn:hover{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
